@@ -44,4 +44,8 @@ nav ul a:hover{
     align-items: center;
     gap:10px;
 }
+    nav img{
+    width: 50px;
+    position: relative;
+}
 }
