@@ -1,0 +1,73 @@
+.store-box {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.store-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('./store-bg.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1; /* adjust opacity here */
+    z-index: 0;
+}
+
+.store-box * {
+    position: relative;
+    z-index: 1; /* ensure text/content appears above the bg */
+}
+
+.store-box h3{
+ color:aliceblue;
+ font-size: 30px;
+}
+
+.store-box p{
+    color:aliceblue;
+    font-size: 100px;
+}
+.store-box p b{
+    color:rgb(255, 0, 0);
+    font-size: 70px;
+}
+.store-box a{
+    font-size: 20px;
+    text-decoration: none;
+    background-color:#fff;
+    color: black;
+    padding: 10px;
+}
+
+.stars {
+  color: gold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.stars p {
+  margin-left: 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+@media screen and (max-width:768px) {
+    .store-box p{
+    color:aliceblue;
+    font-size: 50px;
+}
+.store-box p b{
+    color:rgb(255, 0, 0);
+    font-size: 35px;
+}
+}
