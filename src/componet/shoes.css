@@ -5,6 +5,11 @@
     padding: 50px 10px 0px 0px;
 }
 
+div[id] {
+  scroll-margin-top: 100px; /* Adjust based on navbar height */
+}
+
+
 .text-box-s .tag{
      border-left: 3px solid blue;
      padding-left: 10px;

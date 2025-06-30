@@ -21,14 +21,15 @@ nav ul{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    list-style: none;
 }
-nav ul a{
+nav ul Link,a{
     text-decoration: none;
     color:rgb(255, 255, 255);
     padding: 5px;
     border-bottom: none;
 }
-nav ul a:hover{
+nav ul Link,a:hover{
     /* background:#ffffff9e; */
     color: rgb(255, 255, 255);
     border-bottom:1px solid white;
@@ -43,5 +44,9 @@ nav ul a:hover{
     justify-content: center;
     align-items: center;
     gap:10px;
+}
+nav img{
+    width: 50px;
+    position: relative;
 }
 }

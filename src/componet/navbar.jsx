@@ -1,18 +1,20 @@
+import { Link } from 'react-router-dom';
 import './navbar.css';
-
 const Navbar = () => {
   return (
-      <nav>
-        <img src="/Treadly-logo.svg" alt="logo" />
-        <ul>
-            <a href="/#home">home</a>
-            <a href="/#casual">casual</a>
-            <a href="/#basketball">basketball</a>
-            <a href="/#formal-chelsea">formal</a>
-            <a href="/#gym">gym</a>
-        </ul>
-      </nav>
-  )
-}
+    <nav className="navbar">
+      <div className="navbar-logo">
+        <img src={`${import.meta.env.BASE_URL}Treadly-logo.svg`} alt="Treadly Logo" />
+      </div>
+      <ul className="navbar-links">
+        <li><Link to="/#home">Home</Link></li>
+        <li><Link to="/#casual">Casual</Link></li>
+        <li><Link to="/#basketball">Basketball</Link></li>
+        <li><Link to="/#formal-chelsea">Formal</Link></li>
+        <li><Link to="/#gym">Gym</Link></li>
+      </ul>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
